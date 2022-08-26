@@ -13,7 +13,7 @@ export default class MyDocument extends Document {
     const { pageProps } = this.props.__NEXT_DATA__.props
     const { cmsData, settings }  = pageProps || { cmsData: null, settings: null }
     const { settings: cmsSettings , bodyClass } = cmsData || { settings: null, bodyClass: '' }
-    const { lang } = settings || cmsSettings || { lang: 'en' }
+    const { lang } = settings || cmsSettings || { lang: 'ptBR' }
 
     return (
       <Html {...{lang, className: 'casper' }}>
